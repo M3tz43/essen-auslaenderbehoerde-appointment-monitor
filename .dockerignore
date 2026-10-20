@@ -1,0 +1,37 @@
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Git and editor files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Logs and browser artifacts
+logs/
+screenshots/
+*.log
+appointment_page.html
+appointment_page.png
+calendar_error.png
+Pre testing screenshots/
+
+# Local development and testing
+tools/
+check_availability.py
+test_bot.py
+start_bot.bat
+
+# Documentation and temporary files
+*.tmp
+*.bak

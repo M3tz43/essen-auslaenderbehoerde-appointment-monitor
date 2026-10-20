@@ -1,11 +1,76 @@
-__pycache__/
-*.py[cod]
+
+# ==================================================
+# 1. Secrets and environment configuration
+# ==================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==================================================
+# 2. Python environments and cache
+# ==================================================
 .venv/
 venv/
-.env
-logs/
-screenshots/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==================================================
+# 3. IDE and operating system files
+# ==================================================
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+desktop.ini
 
+# ==================================================
+# 4. Logs and temporary files
+# ==================================================
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ==================================================
+# 5. Playwright and browser artifacts
+# ==================================================
+playwright-report/
+test-results/
+blob-report/
+trace.zip
+appointment_page.html
+appointment_page.png
+calendar_error.png
+
+# ==================================================
+# 6. Screenshots and local test data
+# ==================================================
+screenshots/
+Pre testing screenshots/
+
+# ==================================================
+# 7. Local databases and application state
+# ==================================================
+*.sqlite
+*.sqlite3
+*.db
+
+# ==================================================
+# 8. Local backup files
+# ==================================================
+*.orig
+*.rej
+*~
